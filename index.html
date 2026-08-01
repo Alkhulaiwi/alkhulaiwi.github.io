@@ -305,6 +305,10 @@
       content: "↓";
     }
 
+    .button-external::after {
+      content: "↗";
+    }
+
     .button-secondary:hover,
     .button-secondary:focus-visible {
       border-color: rgba(167, 243, 208, 0.45);
@@ -554,6 +558,21 @@
       line-height: 1.75;
     }
 
+    .about-copy a {
+      color: inherit;
+      text-decoration-color: rgba(167, 243, 208, 0.5);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+      transition: color 180ms ease, text-decoration-color 180ms ease;
+    }
+
+    .about-copy a:hover,
+    .about-copy a:focus-visible {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+      outline: none;
+    }
+
     .approach {
       border-block: 1px solid var(--line);
       background: var(--bg-deep);
@@ -620,6 +639,13 @@
       color: var(--muted);
     }
 
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
     footer {
       padding: 30px 0 42px;
       color: var(--muted);
@@ -672,6 +698,10 @@
       .contact-card {
         grid-template-columns: 1fr;
         align-items: start;
+      }
+
+      .contact-actions {
+        justify-content: flex-start;
       }
     }
 
@@ -886,7 +916,7 @@
           <p class="kicker">About</p>
         </div>
         <div class="about-copy">
-          <p>I’m the owner of TekGards in Saudi Arabia and a business partner at Kimmell Cybersecurity in the United States. I’m an IT and cybersecurity leader with expertise in managed services, cloud infrastructure, cybersecurity, compliance, and digital transformation.</p>
+          <p>I’m the owner of <a href="https://tekguards.sa" target="_blank" rel="noopener noreferrer">TekGards</a> in Saudi Arabia and a business partner at <a href="https://kimmell.com" target="_blank" rel="noopener noreferrer">Kimmell Cybersecurity</a> in the United States. I’m an IT and cybersecurity leader with expertise in managed services, cloud infrastructure, cybersecurity, compliance, and digital transformation.</p>
           <p>I specialize in Microsoft Azure, Microsoft 365, NIST 800-171, CMMC, and DoD cybersecurity requirements, helping organizations design secure, compliant environments while reducing risk and improving operational efficiency. My experience spans security operations, incident response, SIEM, endpoint security, cloud architecture, networking, and strategic IT leadership.</p>
           <p>Passionate about innovation, I’m focused on leveraging automation and artificial intelligence to modernize IT operations, strengthen cybersecurity, and deliver scalable, business-driven solutions that help organizations stay secure, compliant, and prepared for future challenges.</p>
         </div>
@@ -931,7 +961,10 @@
             <h2>What security challenge are you working through?</h2>
             <p>Whether the priority is CMMC readiness, stronger security operations, or a clearer technology strategy, I’d be glad to hear what is on your mind.</p>
           </div>
-          <a class="button" href="mailto:abdullah@tekguards.sa">Email Abdullah</a>
+          <div class="contact-actions">
+            <a class="button" href="mailto:abdullah@tekguards.sa">Email Abdullah</a>
+            <a class="button button-secondary button-external" href="https://www.linkedin.com/in/alkhulaiwi/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
