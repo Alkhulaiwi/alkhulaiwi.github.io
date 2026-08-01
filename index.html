@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Alkhulaiwi | Cybersecurity Leader</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(11, 17, 32, 0.95);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 90vh;
+      padding: 120px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top right, #0e7490 0%, transparent 35%),
+        #0b1120;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.1;
+      max-width: 900px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin-top: 25px;
+      max-width: 750px;
+      font-size: 20px;
+      color: #94a3b8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 24px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      width: fit-content;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 25px;
+      color: #38bdf8;
+    }
+
+    .about {
+      max-width: 900px;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    .card p {
+      color: #94a3b8;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111827;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+
+    @media (max-width: 700px) {
+      nav div:last-child {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <strong>Abdullah Alkhulaiwi</strong>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>
+      Cybersecurity, IT Leadership and
+      <span>CMMC Compliance</span>
+    </h1>
+
+    <p>
+      Cybersecurity and technology leader specializing in CMMC,
+      NIST SP 800-171, managed IT services, cloud security and
+      strategic technology consulting.
+    </p>
+
+    <a class="button" href="#contact">Contact Me</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <p class="about">
+      I am a cybersecurity and IT leader with experience managing
+      secure technology environments, advising organizations on CMMC
+      and NIST SP 800-171 compliance, and delivering cybersecurity,
+      cloud and managed IT solutions. I own TekGards in Saudi Arabia
+      and serve as a business partner at Kimmell Cybersecurity.
+    </p>
+  </section>
+
+  <section id="expertise">
+    <h2>Areas of Expertise</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>CMMC Compliance</h3>
+        <p>
+          Readiness assessments, remediation planning, SSP development,
+          POA&amp;M management and assessment support.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>NIST SP 800-171</h3>
+        <p>
+          Security control implementation, documentation, risk management
+          and protection of Controlled Unclassified Information.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity</h3>
+        <p>
+          SIEM, incident response, vulnerability management, endpoint
+          security and security operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>IT Leadership</h3>
+        <p>
+          Technology strategy, infrastructure management, cloud solutions,
+          MSP operations and client consulting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <p>Let’s discuss cybersecurity, compliance or technology solutions.</p>
+
+    <a class="button" href="mailto:your-email@example.com">
+      Email Me
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Abdullah Alkhulaiwi. All rights reserved.
+  </footer>
+
+</body>
+</html>
