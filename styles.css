@@ -25,7 +25,6 @@
     }
 
     body {
-      min-width: 320px;
       background:
         radial-gradient(circle at 88% 8%, rgba(112, 197, 232, 0.1), transparent 27rem),
         radial-gradient(circle at 5% 35%, rgba(85, 230, 173, 0.08), transparent 24rem),
@@ -51,6 +50,12 @@
 
     a {
       color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
     }
 
     .skip-link {
@@ -138,7 +143,6 @@
     .nav-links a:focus-visible {
       background: rgba(255, 255, 255, 0.05);
       color: var(--ink);
-      outline: none;
     }
 
     .nav-links .nav-cta {
@@ -202,6 +206,13 @@
       grid-template-columns: minmax(0, 1.25fr) minmax(310px, 0.65fr);
       align-items: center;
       gap: clamp(48px, 8vw, 110px);
+    }
+
+    .hero-grid > *,
+    .section-heading > *,
+    .about-grid > *,
+    .contact-card > * {
+      min-width: 0;
     }
 
     .eyebrow {
@@ -277,7 +288,6 @@
     .button:hover,
     .button:focus-visible {
       background: #c8f8df;
-      outline: none;
       transform: translateY(-2px);
     }
 
@@ -556,7 +566,6 @@
     .about-copy a:focus-visible {
       color: var(--accent);
       text-decoration-color: var(--accent);
-      outline: none;
     }
 
     .approach {
@@ -857,6 +866,21 @@
       .footer-inner {
         align-items: flex-start;
         flex-direction: column;
+      }
+    }
+
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      html[lang="ar-SA"] h1 {
+        font-size: 2.5rem;
+      }
+
+      h2,
+      html[lang="ar-SA"] h2 {
+        font-size: 2.2rem;
       }
     }
 
