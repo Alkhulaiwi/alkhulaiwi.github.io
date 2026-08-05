@@ -8,6 +8,14 @@ Personal portfolio website for Abdullah Alkhulaiwi, a technology and cybersecuri
 [alkhulaiwi.github.io](https://alkhulaiwi.github.io/)
 
 
+## Languages
+
+- English: [/](https://alkhulaiwi.github.io/)
+- Saudi Arabic: [/ar/](https://alkhulaiwi.github.io/ar/)
+
+Language selection is manual. Both versions include reciprocal `hreflang` metadata and are listed in the sitemap.
+
+
 ## Technology and Cybersecurity Focus
 
 - Executive technology strategy
@@ -26,4 +34,4 @@ Personal portfolio website for Abdullah Alkhulaiwi, a technology and cybersecuri
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/alkhulaiwi/)
-- [TekGards](https://tekguards.sa)
+- [TekGuards](https://tekguards.sa)
