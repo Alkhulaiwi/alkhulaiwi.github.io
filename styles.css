@@ -147,6 +147,11 @@
       color: var(--accent);
     }
 
+    .nav-links .language-switch {
+      color: var(--ink);
+      font-weight: 750;
+    }
+
     .menu-button {
       width: 44px;
       height: 44px;
@@ -645,6 +650,64 @@
       text-decoration: none;
     }
 
+    html[lang="ar-SA"] body {
+      font-family: Tahoma, Arial, "Segoe UI", sans-serif;
+    }
+
+    html[lang="ar-SA"] h1,
+    html[lang="ar-SA"] h2,
+    html[lang="ar-SA"] .about-copy p {
+      font-family: Tahoma, Arial, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    html[lang="ar-SA"] h1 {
+      font-size: 4.6rem;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+
+    html[lang="ar-SA"] h2 {
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    html[lang="ar-SA"] h1 em {
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    html[lang="ar-SA"] .eyebrow,
+    html[lang="ar-SA"] .brief-head,
+    html[lang="ar-SA"] .kicker,
+    html[lang="ar-SA"] .trust-label {
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    html[lang="ar-SA"] .brief-head,
+    html[lang="ar-SA"] .brief-number,
+    html[lang="ar-SA"] .capability-number,
+    html[lang="ar-SA"] .step span {
+      font-family: Tahoma, Arial, "Segoe UI", sans-serif;
+    }
+
+    html[dir="rtl"] .skip-link {
+      right: 12px;
+      left: auto;
+    }
+
+    html[dir="rtl"] .nav-links .nav-cta {
+      margin-right: 5px;
+      margin-left: 0;
+    }
+
+    html[dir="rtl"] .button:not(.button-secondary)::after,
+    html[dir="rtl"] .button-external::after {
+      content: "↖";
+    }
+
     @media (max-width: 900px) {
       .hero-grid,
       .about-grid {
@@ -657,6 +720,10 @@
 
       h1 {
         font-size: 4.8rem;
+      }
+
+      html[lang="ar-SA"] h1 {
+        font-size: 4rem;
       }
 
       h2 {
@@ -743,6 +810,10 @@
 
       h1 {
         font-size: 3.2rem;
+      }
+
+      html[lang="ar-SA"] h1 {
+        font-size: 2.8rem;
       }
 
       h2 {
