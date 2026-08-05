@@ -1,6 +1,6 @@
 # Abdullah Alkhulaiwi — Personal Website
 
-Personal portfolio website for Abdullah Alkhulaiwi, an IT and cybersecurity leader specializing in cloud infrastructure, managed services, cybersecurity, compliance, and digital transformation.
+Personal portfolio website for Abdullah Alkhulaiwi, a technology and cybersecurity executive focused on strategy, transformation, cyber risk, compliance, and operational resilience.
 
 
 ## Live Website
@@ -8,9 +8,11 @@ Personal portfolio website for Abdullah Alkhulaiwi, an IT and cybersecurity lead
 [alkhulaiwi.github.io](https://alkhulaiwi.github.io/)
 
 
-## Areas of Expertise
+## Technology and Cybersecurity Focus
 
-- Microsoft Azure and Microsoft 365
+- Executive technology strategy
+- Digital transformation
+- Cloud and enterprise infrastructure
 - CMMC and NIST SP 800-171
 - DoD cybersecurity requirements
 - Security operations and incident response
