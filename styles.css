@@ -238,6 +238,10 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+
+    .hero-art img,
+    .section-art {
       animation: hero-art-float 12s ease-in-out infinite;
       transform-origin: center;
     }
@@ -507,6 +511,18 @@
       grid-template-columns: 0.7fr 1.3fr;
       gap: 50px;
       margin-bottom: 58px;
+    }
+
+    #expertise {
+      overflow: clip;
+    }
+
+    .section-art {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: 28px;
+      mask-image: radial-gradient(ellipse at center, black 35%, transparent 72%);
     }
 
     .kicker {
@@ -810,6 +826,17 @@
         gap: 18px;
       }
 
+      .section-visual {
+        display: contents;
+      }
+
+      .section-art {
+        order: 1;
+        max-width: 520px;
+        margin-top: 0;
+        justify-self: center;
+      }
+
       .steps {
         grid-template-columns: 1fr;
       }
@@ -939,7 +966,8 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .hero-art img {
+      .hero-art img,
+      .section-art {
         animation: none;
       }
 
