@@ -868,6 +868,10 @@
         justify-self: center;
       }
 
+      .approach-visual {
+        display: contents;
+      }
+
       .steps {
         grid-template-columns: 1fr;
       }
@@ -1013,3 +1017,68 @@
         transition-duration: 0.01ms !important;
       }
     }
+
+/* Working approach: direction and clarity. */
+.approach-compass {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 290px);
+  aspect-ratio: 1;
+  margin-top: 24px;
+  background: radial-gradient(circle, rgba(112,197,232,0.13), transparent 65%);
+}
+.compass-ring {
+  position: absolute;
+  width: 88%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(112,197,232,0.16);
+  border-top: 2px solid var(--blue);
+  border-right: 2px solid rgba(112,197,232,0.6);
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation: compass-drift 12s ease-in-out infinite alternate;
+}
+.compass-ring:nth-child(2) {
+  width: 65%;
+  border-top-color: var(--accent);
+  border-right-color: rgba(167,243,208,0.6);
+  animation-delay: -4s;
+}
+.compass-ring:nth-child(3) {
+  width: 42%;
+  animation-delay: -8s;
+}
+.compass-ring::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  right: 13%;
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(167,243,208,0.45);
+}
+.compass-direction {
+  color: var(--accent);
+  font-size: 3.2rem;
+  line-height: 1;
+  font-family: var(--font-latin);
+  text-shadow: 0 0 22px rgba(167,243,208,0.2);
+}
+@keyframes compass-drift {
+  from { transform: rotate(-35deg); }
+  to { transform: rotate(15deg); }
+}
+@media (max-width: 900px) {
+ .approach-compass {
+   order: 1;
+   justify-self: center;
+   width: min(100%, 240px);
+   margin-top: 10px;
+ }
+}
+@media (prefers-reduced-motion: reduce) {
+ .compass-ring { animation: none; }
+}
