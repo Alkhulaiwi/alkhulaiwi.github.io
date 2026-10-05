@@ -592,27 +592,58 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 0.7fr 1.3fr;
+      grid-template-columns: 0.9fr 1.3fr;
       gap: 50px;
-      align-items: start;
+      align-items: center;
+    }
+
+    .about-portrait {
+      width: 100%;
+      max-width: 480px;
+      justify-self: center;
+      mask-image: linear-gradient(to bottom, black 80%, transparent),
+        linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      mask-composite: intersect;
+    }
+
+    .about-portrait img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .about-copy p {
-      color: #bbc9c2;
-      font-family: inherit;
-      font-size: 1.9rem;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      line-height: 1.42;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
     }
 
     .about-copy p + p {
       margin-top: 24px;
-      color: var(--muted);
-      font-family: inherit;
-      font-size: 1rem;
-      letter-spacing: 0;
-      line-height: 1.75;
+    }
+
+    .about-copy .kicker {
+      color: var(--accent);
+      font-size: 0.75rem;
+    }
+
+    .about-name,
+    html[lang="ar-SA"] .about-name {
+      margin-top: 20px;
+      font-size: clamp(2rem, 3.5vw, 3.2rem);
+      line-height: 1.25;
+    }
+
+    .about-copy .about-role {
+      margin-top: 14px;
+      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    .about-copy .about-intro {
+      color: #bbc9c2;
+      font-size: 1.2rem;
     }
 
     .about-copy a {
@@ -813,8 +844,8 @@
         font-size: 1.5rem;
       }
 
-      .about-copy p {
-        font-size: 1.75rem;
+      .about-portrait {
+        max-width: 360px;
       }
 
       .hero-art {
@@ -918,8 +949,8 @@
         font-size: 1.3rem;
       }
 
-      .about-copy p {
-        font-size: 1.4rem;
+      .about-copy .about-intro {
+        font-size: 1.1rem;
       }
 
       .trust-inner {
