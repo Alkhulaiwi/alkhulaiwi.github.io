@@ -649,6 +649,22 @@
       font-size: 1.2rem;
     }
 
+    .about-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .about-copy .about-actions .button {
+      color: var(--bg-deep);
+      text-decoration: none;
+    }
+
+    .about-copy .about-actions .button-secondary {
+      color: var(--ink);
+    }
+
     .about-copy a {
       color: inherit;
       text-decoration-color: rgba(167, 243, 208, 0.5);
